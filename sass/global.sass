@@ -1,0 +1,513 @@
+$c1: #555
+$c2: #fff
+$fz: 14px
+$ff: Arial, Helvetica, sans-serif
+
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font: $fz $ff
+	color: $c1
+	background: $c2
+	box-sizing: border-box
+
+html, body, header, article, aside, main, footer, div, h1, h2, h3, h4, h5, h6, button, .show, .block
+	display: block
+
+.inline-block
+	display: inline-block
+
+meta, script, style, .hidden
+	display: none
+
+
+h1
+	font-size: 17px
+	text-align: center
+h2
+	font-size: 20px
+h3
+	font-size: 16px
+h4
+	font-size: 14px
+h5
+	font-size: 12px
+h6
+	font-size: 10px
+
+
+
+a
+	color: $c1
+	text-decoration: none
+
+input, select
+	font-size: 13px
+
+
+textarea
+	resize: none
+
+ul, ol
+	margin: 0
+
+li
+	list-style: none
+
+
+::placeholder
+	color: gray
+
+
+.tal
+	text-align: left
+
+.tac
+	text-align: center
+
+.tar
+	text-align: right
+
+.ttc
+	text-transform: capitalize
+
+i.icon
+	display: inline-block
+
+.i, i
+	font-style: italic
+
+.bold, b, strong
+	font-weight: bold
+
+.btn, button
+	display: block
+	text-align: center
+	cursor: pointer
+
+.container
+	position: relative
+	max-width: 1024px
+	margin: 0 auto
+	padding-left: 15px
+	padding-right: 15px
+
+
+.row, .clearfix
+	&:before, &:after
+		display: table
+		content: ''
+		box-sizing: border-box
+	&:after
+		clear: both
+
+.w0
+	.a1
+		width: 8.33333333%
+	.a2
+		width: 16.66666667%
+	.a3
+		width: 25%
+	.a4
+		width: 33.33333333%
+	.a5
+		width: 41.66666667%
+	.a6
+		width: 50%
+	.a7
+		width: 58.33333333%
+	.a8
+		width: 66.66666667%
+	.a9
+		width: 75%
+	.a10
+		width: 83.33333333%
+	.a11
+		width: 91.66666667%
+	.a12
+		width: 100%
+
+
+.w2 > .col
+	width: 50%
+.w3 > .col
+	width: 33.333333333%
+.w4 > .col
+	width: 25%
+.w5 > .col
+	width: 20%
+.w6 > .col
+	width: 16.666666667%
+
+
+.col
+	display: block
+	float: left
+	min-height: 1px
+
+.breadcrumbs
+	list-style: none
+	margin: 5px 0
+	font-size: 12px
+	li
+		display: inline
+		&:after
+			position: relative
+			display: inline-block
+			content: ''
+			margin-right: -2px
+			margin-left: 0px
+			background: url('http://www.okna-o.ru/images/M_images/arrow.png')
+			width: 9px
+			height: 9px
+		&:last-of-type
+			&:after
+				display: none
+	a
+		color: #800000
+		text-decoration: underline
+
+
+
+		
+
+
+
+
+button#sticks
+	background: none
+	width: 40px
+	height: 40px
+	border: none
+	outline: none
+	span
+		display: block
+		position: relative
+		width: 35px
+		height: 4px
+		background: $c1		
+		margin-left: auto
+		margin-right: auto
+		transition: .5s
+		&:nth-of-type(2)
+			margin: 6px auto
+	&.close
+		span
+			&:nth-of-type(1)
+				transform: rotate(135deg)
+			&:nth-of-type(2)
+				display: none
+			&:nth-of-type(3)
+				margin-top: -4px
+				transform: rotate(-135deg)
+
+
+
+header
+	width: 100%
+	height: 200px
+	background: url(http://www.okna-o.ru/bitrix/templates/main/images/new.jpg) no-repeat center top
+	position: relative
+	.logo
+		display: block
+		padding-top: 10px
+		padding-left: 20px
+
+	.share
+		z-index: 10
+		position: absolute
+		right: 15px
+		top: 115px
+		display: block
+		width: 206px
+		height: 121px
+		background: url(http://www.okna-o.ru/bitrix/templates/main/images/but_kupon.png) no-repeat top left
+		&:hover
+			top: 114px
+			background-position: bottom left
+
+
+aside
+	position: relative
+	&.left
+		float: left
+		width: 227px
+		padding: 20px 5px 10px 0
+		background: #bec1c4 url(http://www.delini.ru/templates/livesite/images/corner1.jpg) no-repeat right top
+		text-align: left
+		width: 223px
+		vertical-align: top
+		&:after
+			position: absolute
+			content: ''
+			width: 229px
+			height: 30px
+			background-image: url("../img/aside-left-after.jpg")
+			bottom: -30px
+			left: 0
+		.left-nav
+			position: relative
+			width: 218px
+			background: url(http://www.delini.ru/templates/livesite/images/m-r.jpg) repeat-y right top, url(http://www.delini.ru/templates/livesite/images/m-t.jpg) repeat-x left top, url(http://www.delini.ru/templates/livesite/images/m-bg.jpg) repeat-x left 50%
+			background-color: #686869
+			margin-bottom: 8px
+			a
+				color: $c2
+				&:hover
+						color: #5a1500
+			&:before
+				position: absolute
+				display: block
+				content: ''
+				background: url(http://www.delini.ru/templates/livesite/images/m-brc.jpg) no-repeat right bottom
+				width: 9px
+				height: 10px
+				bottom: -9px
+				right: 0
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				background: url(http://www.delini.ru/templates/livesite/images/m-b.jpg) repeat-x left top
+				width: 209px
+				padding-top: 7px
+				bottom: -6px
+			li
+				background: url(http://www.delini.ru/templates/livesite/images/m-div.jpg) repeat-x left bottom 
+				margin: 0 
+				padding: 6px 0 6px 5px
+				width: 209px
+				box-sizing: border-box
+				font-weight: 700
+				&:before
+					content: ''
+					text-decoration: none
+					padding-left: 20px
+					font-weight: 700
+					background: url(http://www.delini.ru/templates/livesite/images/menu-marker.jpg) no-repeat 4px 50%
+				&.select
+					a
+						color: #444
+					ul
+						display: block
+						li
+							a
+								color: white
+								&:hover
+									color: #5a1500
+				a
+					display: inline-block
+					margin-bottom: 2px
+				ul
+					display: none
+					li
+						// margin-left: 20%
+						background: none
+						padding-left: 25px
+						font-weight: 400
+						font-size: 13px
+						padding: 2px 0 2px 25px
+						&:before
+							display: none
+					a
+						margin-bottom: 0
+
+	&.right
+		z-index: 11
+		float: right
+		display: none
+		text-align: center
+		background-color: #9f9fa0
+		width: 233px
+		padding-bottom: 15px
+		padding-top: 15px
+		box-sizing: border-box
+		&:before
+			position: absolute
+			content: ''
+			width: 233px
+			height: 118px
+			background-image: url("../img/aside-right-before.jpg")
+			top: -107px
+			right: 0
+		&:after
+			position: absolute
+			content: ''
+			width: 232px
+			height: 30px
+			background-image: url("../img/aside-right-after.jpg")
+			bottom: -30px
+			right: 0
+	
+
+.gallery
+	a
+		display: inline-block
+	img
+		display: block
+		margin: 0 auto 15px
+		border: 1px solid #ffffff
+
+
+
+.buttons
+	padding-top: 30px
+	padding-left: 15px
+	a
+		display: block
+		margin-bottom: 15px
+		&:last-of-type
+			margin-bottom: 0
+
+.contacts
+	text-align: center
+	.address
+		padding-left: 5px
+		padding-right: 5px
+		margin-bottom: 15px
+		.email
+			color: #333
+			text-decoration: underline
+	.phones
+		a
+			font-size: 24px
+			font-weight: bold
+
+
+
+section
+	// display: none
+	float: left
+	padding: 12px 10px 10px 10px
+	width: 770px
+	a
+		color: maroon
+		text-decoration: underline
+		&:hover
+			color: #666
+	p
+		margin-top: 1em
+		margin-bottom: 1em
+	h2
+		display: block
+		font-size: 1em
+		-webkit-margin-before: 1em
+		-webkit-margin-after: 1em
+		-webkit-margin-start: 0
+		-webkit-margin-end: 0
+		font-weight: 700
+		color: #555
+	li
+		display: list-item
+		text-align: -webkit-match-parent
+		list-style-type: decimal
+	ul
+		margin-top: 1em
+		margin-bottom: 1em
+		margin-left: 40px
+		li
+			display: list-item
+			text-align: -webkit-match-parent
+			list-style-type: disc
+	ol
+		display: block
+		list-style-type: decimal
+		-webkit-margin-before: 1em
+		-webkit-margin-after: 1em
+		-webkit-margin-start: 0px
+		-webkit-margin-end: 0px
+		-webkit-padding-start: 40px
+		
+		ul
+			margin: 0
+			margin-left: 40px
+			li
+				list-style-type: circle
+	.nav
+		margin: 0
+		li
+			position: relative
+			display: inline-block
+			text-align: center
+			background: url(http://www.delini.ru/templates/livesite/images/button-bot.jpg) repeat-x left bottom
+			background-color: #d8dadb
+			width: 173px
+			height: 29px
+			line-height: 24px
+			padding: 0
+			margin-right: 17px
+			&:after
+				top: 0
+				right: -6px
+				position: absolute
+				display: block
+				content: ''
+				background: url(http://www.delini.ru/templates/livesite/images/button-right.jpg) repeat-y right top
+				width: 6px
+				height: 24px
+			&:before
+				bottom: 0
+				right: -6px
+				position: absolute
+				display: block
+				content: ''
+				background: url(http://www.delini.ru/templates/livesite/images/button-cor.jpg) no-repeat right bottom
+				width: 6px
+				height: 6px
+			&:last-of-type
+				margin-right: 0
+
+		a
+			display: block
+			color: #333
+			font-weight: bold
+			text-decoration: none
+			&:hover
+				color: #5a1500
+
+	.nav + .content
+		padding-top: 5px
+
+footer
+	width: 100%
+	height: 79px
+	background: url(../img/footer.jpg) no-repeat center top
+	color: #222
+	font-size: 12px
+	padding-top: 30px
+	text-align: center
+	a
+		color: #333
+		text-decoration: underline
+
+.link-lib
+	text-align: center
+
+
+.main_info_right
+	border: 1px dotted #63282A
+	color: #000
+	font-size: 14px
+	font-weight: normal
+	font-style: italic
+	display: block
+	padding: 5px
+	margin: 5px 0
+	width: auto
+	float: right
+	background-color: #eaeaea
+	margin-left: 10px
+
+.main_info
+	border: 1px dotted #63282A
+	color: #000
+	font-size: 14px
+	font-weight: normal
+	font-style: italic
+	display: block
+	padding: 5px
+	margin: 5px 0
+	background-color: #eaeaea

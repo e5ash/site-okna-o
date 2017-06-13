@@ -1,0 +1,128 @@
+@media screen and (max-width: 1070px)
+	.hidden
+		display: block
+	.container
+		max-width: 700px
+	header
+		height: auto
+		background: none
+		background-color: #333333
+		.logo
+			text-align: left
+			float: left
+			padding-top: 5px
+			padding-bottom: 5px
+			padding-left: 0
+			width: 50%
+		.share
+			display: none
+		.contacts
+			float: left
+			width: 50%
+			font-size: 16px
+			color: white
+			padding-top: 10px
+			text-align: right
+			.tel
+				font-size: 18px
+				font-weight: bold
+			a
+				display: inline-block
+				color: white
+				padding-bottom: 5px
+
+	.hidden-nav
+		position: relative
+		.name
+			display: none
+			position: absolute
+			right: 15px
+			top: 12px
+			font-weight: bold
+			font-size: 16px
+		.panel
+			background: #F0F0F0
+		.hidden-nav__nav
+			display: none
+			z-index: 100
+			position: absolute
+			width: 100%
+			background: #D8D8D8
+			top: 40px
+			left: 0
+			li
+				margin-top: 5px
+				margin-bottom: 5px
+			ul
+				font-size: 16px
+				margin-left: 0
+				ul
+					max-width: 250px
+					margin-left: auto
+					margin-right: auto
+					ul
+						margin-left: 20px
+						li
+							font-size: 14px
+
+	section
+		width: 100%
+		box-sizing: border-box
+		.breadcrumbs
+			display: none
+		.nav
+			display: none
+	footer
+		background: #333333
+		color: white
+		height: auto
+		padding-top: 10px
+		padding-bottom: 10px
+		margin-bottom: 61px
+		a
+			color: white
+		p
+			display: none
+			&.copy
+				display: block
+	.link-lib
+		display: none
+	aside.left
+		display: none
+	
+	.hidden-fixed-nav
+		z-index: 99
+		position: fixed
+		bottom: 0
+		width: 100%
+		
+		background: rgb(125,39,39)
+		background: -moz-linear-gradient(top, rgba(125,39,39,1) 0%, rgba(68,6,6,1) 100%)
+		background: -webkit-linear-gradient(top, rgba(125,39,39,1) 0%,rgba(68,6,6,1) 100%)
+		background: linear-gradient(to bottom, rgba(125,39,39,1) 0%,rgba(68,6,6,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d2727', endColorstr='#440606',GradientType=0 )
+		a
+			float: left
+			width: 25%
+			display: block
+			box-sizing: border-box
+			text-align: center
+			border-right: 1px solid #440606
+			padding-top: 5px
+			padding-bottom: 5px
+			&:last-of-type
+				border-right: none
+		span
+			display: block
+			color: white
+			// font-size: 16px
+@media screen and (max-width: 370px)
+	header 
+		.logo, .contacts
+			width: 100%
+			text-align: center
+		.logo
+			padding-top: 20px
+		.contacts
+			padding-top: 0
+			padding-bottom: 20px
